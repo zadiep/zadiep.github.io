@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Grab title from the page data and dump it here -->
+
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+  <!-- Grab the content from the page data, dump it here, and mark it as safe -->
+  <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+<h1>PPUZZLEDD</h1>
+<h2>HOME</h2>
+<h2>Porfolio</h2>
+<h2>Biography</h2>
+
+  {{ content | safe }}
+
+</body>
+</html>
